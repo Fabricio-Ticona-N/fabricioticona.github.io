@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fabricio Samuel Ticona Nuñonca - Mi Página Personal</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+            border-radius: 0 0 10px 10px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+        }
+        
+        h1 {
+            font-size: 2.8rem;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+        
+        .subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+        
+        .profile-section {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin-bottom: 40px;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+        }
+        
+        .photo-container {
+            flex: 1;
+            min-width: 250px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .profile-photo {
+            width: 100%;
+            max-width: 300px;
+            height: 300px;
+            border-radius: 10px;
+            background-color: #e9ecef;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        
+        .profile-photo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .photo-placeholder {
+            color: #6c757d;
+            text-align: center;
+            padding: 20px;
+        }
+        
+        .info-container {
+            flex: 2;
+            min-width: 300px;
+        }
+        
+        h2 {
+            color: #2575fc;
+            margin: 25px 0 15px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #e9ecef;
+            font-size: 1.8rem;
+        }
+        
+        h3 {
+            color: #495057;
+            margin: 20px 0 10px;
+            font-size: 1.4rem;
+        }
+        
+        p {
+            margin-bottom: 15px;
+            font-size: 1.1rem;
+        }
+        
+        ul {
+            margin-left: 20px;
+            margin-bottom: 20px;
+        }
+        
+        li {
+            margin-bottom: 8px;
+            font-size: 1.1rem;
+        }
+        
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+            margin-bottom: 30px;
+        }
+        
+        .links-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 15px;
+            margin-top: 15px;
+        }
+        
+        .link-item {
+            background: #f8f9fa;
+            padding: 12px 15px;
+            border-radius: 8px;
+            border-left: 4px solid #2575fc;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        
+        .link-item:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .link-item a {
+            color: #2575fc;
+            text-decoration: none;
+            font-weight: 500;
+            display: block;
+        }
+        
+        .link-item a:hover {
+            text-decoration: underline;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+            color: #6c757d;
+            border-top: 1px solid #dee2e6;
+        }
+        
+        @media (max-width: 768px) {
+            .profile-section {
+                flex-direction: column;
+            }
+            
+            h1 {
+                font-size: 2.2rem;
+            }
+            
+            .links-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Fabricio Samuel Ticona Nuñonca</h1>
+            <p class="subtitle">Estudiante de Ciencia de la Computación - UCSP</p>
+        </div>
+    </header>
+    
+    <div class="container">
+        <section class="profile-section">
+            <div class="photo-container">
+                <div class="profile-photo">
+                    <div class="photo-placeholder">
+                        <p>Tu foto aquí</p>
+                        <p><small>Puedes reemplazar este espacio con tu imagen</small></p>
+                    </div>
+                    <!-- Cuando tengas tu foto, reemplaza el div de arriba con:
+                    <img src="tu-foto.jpg" alt="Aylen Elena Yuera Nina">
+                    -->
+                </div>
+                <div class="upload-instructions">
+                    <p><strong>Para agregar tu foto:</strong></p>
+                    <p>1. Reemplaza el texto "Tu foto aquí" con:<br>
+                    <code>&lt;img src="ruta/a/tu/foto.jpg" alt="Aylen Elena Yuera Nina"&gt;</code></p>
+                    <p>2. Sube tu imagen a la carpeta de tu proyecto</p>
+                </div>
+            </div>
+            
+            <div class="info-container">
+                <h2>Sobre Mí</h2>
+                <p>Mi nombre es <strong>Aylen Elena Yuera Nina</strong>. Tengo 18 años y actualmente estudio la carrera de Contabilidad en la UCSP (Universidad Católica San Pablo).</p>
+                
+                <h3>Pasatiempos</h3>
+                <p>Mi pasatiempo favorito es <strong>leer</strong>. Disfruto sumergirme en diferentes mundos a través de los libros y expandir mis conocimientos.</p>
+                
+                <h2>Estudios Actuales</h2>
+                <p>Estoy cursando actualmente mi <strong>4to semestre</strong> en la UCSP. Los cursos que estoy llevando este semestre son:</p>
+                <ul>
+                    <li>Contabilidad de Costos</li>
+                    <li>Legislación y Auditoría Tributaria</li>
+                    <li>Liderazgo</li>
+                    <li>Pensamiento crítico e innovación</li>
+                    <li>Cálculo en varias variables</li>
+                    <li>Historia de occidente I</li>
+                    <li>Pensamiento Computacional</li>
+                </ul>
+                
+                <h3>Sobre el curso de Pensamiento Computacional</h3>
+                <p>Este curso me parece muy interesante, ya que las clases son con estudiantes de 4 carreras universitarias diferentes y nunca había llevado un curso así. Me está permitiendo ampliar mis perspectivas y conocer diferentes enfoques de pensamiento.</p>
+            </div>
+        </section>
+        
+        <section class="card">
+            <h2>Compañeros de Clase</h2>
+            <p>Estos son algunos de mis compañeros en el curso de Pensamiento Computacional:</p>
+            <div class="links-grid">
+                <div class="link-item">JHON APANCHO: <a href="#">enlace</a></div>
+                <div class="link-item">ALANIS AGUILAR: <a href="#">enlace</a></div>
+                <div class="link-item">MANUEL VARGAS: <a href="#">enlace</a></div>
+                <div class="link-item">ASHLEE RENDON: <a href="#">enlace</a></div>
+                <div class="link-item">SHAELL MACHACA: <a href="#">enlace</a></div>
+                <div class="link-item">DAYANA VERAPINTO: <a href="#">enlace</a></div>
+                <div class="link-item">AYLY GALLEGOS: <a href="#">enlace</a></div>
+                <div class="link-item">VALESKA NOA: <a href="#">enlace</a></div>
+                <div class="link-item">Eduardo Mendoza: <a href="#">enlace</a></div>
+                <div class="link-item">Sebastián Castillo Carpio: <a href="#">enlace</a></div>
+            </div>
+        </section>
+        
+        <section class="card">
+            <h2>Enlaces de LinkedIn</h2>
+            <p>Perfiles profesionales en LinkedIn:</p>
+            <div class="links-grid">
+                <div class="link-item">Aylen Yuera Nina: <a href="#">enlace</a></div>
+                <div class="link-item">Docente. Ernesto Cuadros: <a href="#">enlace</a></div>
+                <div class="link-item">Docente. Lourdes Paz: <a href="#">enlace</a></div>
+                <div class="link-item">Docente. Juan Sardá: <a href="#">enlace</a></div>
+                <div class="link-item">Docente. Elizabeth Gómez: <a href="#">enlace</a></div>
+            </div>
+        </section>
+    </div>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Aylen Elena Yuera Nina - Todos los derechos reservados</p>
+        </div>
+    </footer>
+</body>
+</html>
